@@ -1,0 +1,88 @@
+@import "lib.less";
+
+#background_layer {
+background-image:url(../images/bg-first_layer_inner.jpg);
+background-repeat:repeat-x;
+background-color:#eeeeee;
+background-position:top;
+
+	#portfolio_wrapper {
+	
+		#header_wrapper {
+		background-color: rgba(255,255,255,.30);
+		-pie-background: rgba(255,255,255,.30);
+		behavior: url(http://www.legend.rs/css/PIE.htc);
+		.border_radius(5px 5px 0 0);
+		height:108px;
+		overflow:hidden;
+		}
+		
+		#two_column_portfolio, #three_column_portfolio {
+		padding:20px 0 0 0;
+		overflow:hidden;
+		height:100%;
+		
+			.portfolio_item {
+			width:460px;
+			float:left;
+			margin:10px;
+			
+				img {
+				.border_radius(5px 5px 0 0);
+				float:left;
+				}
+				
+				.content {
+				width:420px;
+				background-color:#e5e5e5;
+				.gradient (#e8e8e8, #dddddd);
+				.border_radius(0 0 5px 5px);
+				border-bottom:1px solid #d4d4d4;
+				font-size:12px;
+				clear:both;
+				color:#555555;
+				padding:20px;
+				
+					h2 {
+					font-size:14px;
+					font-weight:normal;
+					color:#444444;
+					padding:0 0 5px 0;
+					border-bottom:1px solid #cccccc;
+					}
+					
+					p {
+					border-top:1px solid #eeeeee;
+					padding:5px 0 0 0;
+					
+						a {
+						display:block;
+						padding:5px 0 0 0;
+						text-align:right;
+						}
+						
+					}
+					
+				}
+				
+			}
+		
+		}
+		
+		#three_column_portfolio {
+		
+			.portfolio_item {
+			width:300px;
+
+				.content {
+				width:260px;
+				}
+				
+			}
+			
+		}
+		
+	
+	}
+	
+}
