@@ -21,6 +21,16 @@
 </head>
 <body onload="prettyPrint()">
 
+<div id="popup_overlay"></div>
+
+<div id="login_popup">
+
+	Login form placeholder
+
+	<div id="close_button">Close</div>
+
+</div>
+
 <div id="background_layer">
 
 	<div id="site_wrapper">
@@ -116,7 +126,7 @@
 
 				<div id="login_box">
 					
-					<a href="#" class="mainmenu_item_link">
+					<a href="#" class="mainmenu_item_link" id="login_link">
 						<strong>Login</strong>
 						Member area
 					</a>

@@ -67,4 +67,32 @@ $(document).ready(function(){
 
 	$('#datepicker_input').datepicker();
 	
+	// Function for absolute centering an element based the browser window
+	// TODO: jump to center when resizing browser window
+	jQuery.fn.center = function () {
+		this.css("top", (($(window).height() - this.outerHeight()) / 2) + $(window).scrollTop() + "px");
+		this.css("left", (($(window).width() - this.outerWidth()) / 2) + $(window).scrollLeft() + "px");
+		return this;
+	}	
+	
+	// Fade in the login popup overlay after a click on the login link
+	$('#login_link').click(function(){
+
+		$('#popup_overlay').height($(window).height());
+		$('#popup_overlay').width($(window).width());
+		$('#popup_overlay').fadeIn();
+		
+		$('#login_popup').center();
+		$('#login_popup').delay(200).fadeIn();
+		return false;
+		
+	});
+	
+	// Fade out the login popup overlay after clicking on the background or the close button
+	$('#popup_overlay, #login_popup #close_button').click(function() {
+	
+		$('#login_popup').fadeOut();
+		$('#popup_overlay').delay(200).fadeOut();
+	});
+	
 });
