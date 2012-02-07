@@ -1,6 +1,4 @@
-<?php include_once('inc_header.php'); ?>
-	
-		<div id="site_inner_wrapper">
+	<div id="site_inner_wrapper">
 		
 			<div id="header_wrapper">
 			
@@ -177,5 +175,3 @@
 			</div>
 			
 		</div>
-
-<?php include_once('inc_footer.php'); ?>

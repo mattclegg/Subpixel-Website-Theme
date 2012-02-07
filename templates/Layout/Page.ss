@@ -1,5 +1,3 @@
-<?php include_once('inc_header.php'); ?>
-
 	<?php include_once('inc_carousel.php'); ?>
 
 		<div id="site_content_wrapper">
@@ -196,5 +194,3 @@
 			</div>
 
 		</div>
-
-<?php include_once('inc_footer.php'); ?>

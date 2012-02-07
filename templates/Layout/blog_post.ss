@@ -1,5 +1,3 @@
-<?php include_once('inc_header.php'); ?>
-
 		<div id="blog_wrapper">
 		
 			<div id="blog_post">
@@ -287,5 +285,3 @@ function form_hidden($name, $value = '', $recursing = FALSE)
 			</div>
 			
 		</div>
-
-<?php include_once('inc_footer.php'); ?>

@@ -1,5 +1,3 @@
-<?php include_once('inc_header.php'); ?>
-
 		<div id="portfolio_wrapper">
 		
 			<div id="header_wrapper">
@@ -111,5 +109,3 @@
 			</div>	
 		
 		</div>
-		
-<?php include_once('inc_footer.php'); ?>

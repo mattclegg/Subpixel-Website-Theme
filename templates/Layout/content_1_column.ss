@@ -1,22 +1,14 @@
-<?php include_once('inc_header.php'); ?>
-	
 		<div id="site_inner_wrapper">
 		
 			<div id="header_wrapper">
 			
-				<h1>Two Columns - Heading 1</h1>
+				<h1>One Column - Heading 1</h1>
 				
-				<p>Morbi sodales laoreet metus, et mollis ipsum mollis eget. Aliquam vitae erat neque. Nullam at neque justo. Aliquam vitae aliquet nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-				
-			</div>
-			
-			<div id="sidebar">
-			
-				<?php include_once('inc_content_sidebar_menu.php'); ?>
+				<p>Mauris ullamcorper pharetra tempus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In ut metus eget orci pellentesque volutpat. In erat urna, blandit a feugiat ut, aliquet nec sapien.</p>
 				
 			</div>
 		
-			<div id="three_column_content">
+			<div id="one_column_content">
 			
 				<h2>Heading 2 - Lorem ipsum dolor sit amet, consectetur</h2>
 			
@@ -35,7 +27,7 @@
 				
 				<p>Maecenas sollicitudin faucibus leo sed dapibus. Donec eu enim nulla, a condimentum leo. Integer pulvinar tincidunt lacus, rhoncus iaculis ipsum dignissim ut. Nullam eget condimentum libero. Quisque ante orci, adipiscing eu cursus ut, malesuada eget nunc.</p>
 				
-				<p><img src="images/image-three_column.jpg" width="495" height="300" alt="Decoration image" /></p>
+				<p><img src="images/image-two_column.jpg" width="930" height="300" alt="Decoration image" /></p>
 				
 				<p>Morbi sodales laoreet metus, et mollis ipsum mollis eget. Aliquam vitae erat neque. Nullam at neque justo. Aliquam vitae aliquet nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas felis at tellus hendrerit posuere. Aenean id viverra felis. Donec eget iaculis quam. Proin vel dui sit amet ipsum volutpat suscipit et in nisi. Curabitur porttitor, nibh id fermentum dapibus, lacus leo porttitor turpis, eu sollicitudin erat sem eget sem.</p>
 
@@ -62,31 +54,5 @@
 				<p>Nunc tristique mattis orci eget eleifend. Proin sed tortor est, tristique porttitor leo. Curabitur et metus ut quam egestas commodo. Sed ut adipiscing velit. In ligula est, varius in porta eget, viverra vel orci. Etiam quis venenatis lorem. Ut dignissim rutrum dui, non rutrum massa sollicitudin a. Nullam leo sem.</p>	
 				
 			</div>
-			
-			<div id="sidebar_right">
-				
-				<div class="box">
-				
-					<h3>Sidebar box</h3>
-				
-					<p><img src="images/icon_64-apps.png" width="64" height="64" alt="" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
-					<br />
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
-					
-				</div>
-				
-				<div class="box">
-				
-					<h3>Sidebar box</h3>
-				
-					<p><img src="images/icon_64-money.png" width="64" height="64" alt="" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br />
-					<br />
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
-					
-				</div>
-				
-			</div>
-			
-		</div>
 
-<?php include_once('inc_footer.php'); ?>
+		</div>
