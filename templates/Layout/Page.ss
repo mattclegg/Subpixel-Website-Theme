@@ -16,7 +16,7 @@
 			</div><div id="three_column_content">
 		<% end_if %>
 	<% else %><div id="one_column_content"><% end_if %>
-		$Content
+		<% if Content %>$Content<% else %><% include Content %><% end_if %>
 		$Form
 		$PageComments
 	</div>
