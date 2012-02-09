@@ -1,0 +1,380 @@
+/* The absolute path to PIE.htc */
+body,
+ul,
+ul li,
+img,
+h1,
+h2,
+h3,
+h4,
+form,
+p,
+fieldset,
+button,
+blockquote,
+:focus {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+}
+body {
+  background-color: #eeeeee;
+}
+a {
+  color: #2076a4;
+}
+#popup_overlay {
+  position: absolute;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  -pie-background: rgba(255, 255, 255, 0.75);
+  z-index: 9998;
+  behavior: url(http://www.snappyseed.com/subpixel/scripts/PIE.htc);
+}
+#login_popup {
+  display: none;
+  position: absolute;
+  padding: 50px 30px 50px 30px;
+  font-size: 18px;
+  color: #444444;
+  z-index: 9999;
+  -moz-box-shadow: 0 0 10px #000000;
+  -webkit-box-shadow: 0 0 10px #000000;
+  box-shadow: 0 0 10px #000000;
+  behavior: url(http://www.snappyseed.com/subpixel/scripts/PIE.htc);
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  behavior: url(http://www.snappyseed.com/subpixel/scripts/PIE.htc);
+  background-color: #ffffff;
+  text-align: center;
+}
+#login_popup #close_button {
+  cursor: pointer;
+  color: #aa0000;
+}
+#background_layer {
+  background-image: none;
+}
+#background_layer #blog_wrapper {
+  overflow: hidden;
+  height: 100%;
+  padding: 0 0 30px 0;
+}
+#background_layer #blog_wrapper #blog_content, #background_layer #blog_wrapper #blog_post, #background_layer #blog_wrapper #sidebar {
+  width: 760px;
+  float: left;
+  height: 100%;
+}
+#background_layer #blog_wrapper #blog_content .blog_item,
+#background_layer #blog_wrapper #blog_post .blog_item,
+#background_layer #blog_wrapper #sidebar .blog_item,
+#background_layer #blog_wrapper #blog_content .blog_post_content,
+#background_layer #blog_wrapper #blog_post .blog_post_content,
+#background_layer #blog_wrapper #sidebar .blog_post_content {
+  font-size: 14px;
+  padding: 30px 0 0 0;
+  width: 730px;
+}
+#background_layer #blog_wrapper #blog_content .blog_item h2,
+#background_layer #blog_wrapper #blog_post .blog_item h2,
+#background_layer #blog_wrapper #sidebar .blog_item h2,
+#background_layer #blog_wrapper #blog_content .blog_post_content h2,
+#background_layer #blog_wrapper #blog_post .blog_post_content h2,
+#background_layer #blog_wrapper #sidebar .blog_post_content h2 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  padding: 0 0 15px 0;
+}
+#background_layer #blog_wrapper #blog_content .blog_item h2 a,
+#background_layer #blog_wrapper #blog_post .blog_item h2 a,
+#background_layer #blog_wrapper #sidebar .blog_item h2 a,
+#background_layer #blog_wrapper #blog_content .blog_post_content h2 a,
+#background_layer #blog_wrapper #blog_post .blog_post_content h2 a,
+#background_layer #blog_wrapper #sidebar .blog_post_content h2 a {
+  color: #444444;
+  text-decoration: none;
+}
+#background_layer #blog_wrapper #blog_content .blog_item h2 a:hover,
+#background_layer #blog_wrapper #blog_post .blog_item h2 a:hover,
+#background_layer #blog_wrapper #sidebar .blog_item h2 a:hover,
+#background_layer #blog_wrapper #blog_content .blog_post_content h2 a:hover,
+#background_layer #blog_wrapper #blog_post .blog_post_content h2 a:hover,
+#background_layer #blog_wrapper #sidebar .blog_post_content h2 a:hover {
+  color: #666666;
+}
+#background_layer #blog_wrapper #blog_content .blog_item .info,
+#background_layer #blog_wrapper #blog_post .blog_item .info,
+#background_layer #blog_wrapper #sidebar .blog_item .info,
+#background_layer #blog_wrapper #blog_content .blog_post_content .info,
+#background_layer #blog_wrapper #blog_post .blog_post_content .info,
+#background_layer #blog_wrapper #sidebar .blog_post_content .info {
+  font-size: 13px;
+  color: #777777;
+  padding: 5px 0 5px 10px;
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  background-color: #e5e5e5;
+}
+#background_layer #blog_wrapper #blog_content .blog_item .info .tags,
+#background_layer #blog_wrapper #blog_post .blog_item .info .tags,
+#background_layer #blog_wrapper #sidebar .blog_item .info .tags,
+#background_layer #blog_wrapper #blog_content .blog_post_content .info .tags,
+#background_layer #blog_wrapper #blog_post .blog_post_content .info .tags,
+#background_layer #blog_wrapper #sidebar .blog_post_content .info .tags {
+  float: right;
+  padding: 0 10px 0 0;
+}
+#background_layer #blog_wrapper #blog_content .blog_item p,
+#background_layer #blog_wrapper #blog_post .blog_item p,
+#background_layer #blog_wrapper #sidebar .blog_item p,
+#background_layer #blog_wrapper #blog_content .blog_post_content p,
+#background_layer #blog_wrapper #blog_post .blog_post_content p,
+#background_layer #blog_wrapper #sidebar .blog_post_content p {
+  padding: 20px 0 0 0;
+  color: #444444;
+}
+#background_layer #blog_wrapper #blog_content .blog_item p img,
+#background_layer #blog_wrapper #blog_post .blog_item p img,
+#background_layer #blog_wrapper #sidebar .blog_item p img,
+#background_layer #blog_wrapper #blog_content .blog_post_content p img,
+#background_layer #blog_wrapper #blog_post .blog_post_content p img,
+#background_layer #blog_wrapper #sidebar .blog_post_content p img {
+  float: left;
+  margin: 5px 20px 10px 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  behavior: url(http://www.snappyseed.com/subpixel/scripts/PIE.htc);
+}
+#background_layer #blog_wrapper #blog_content .blog_item .footer,
+#background_layer #blog_wrapper #blog_post .blog_item .footer,
+#background_layer #blog_wrapper #sidebar .blog_item .footer,
+#background_layer #blog_wrapper #blog_content .blog_post_content .footer,
+#background_layer #blog_wrapper #blog_post .blog_post_content .footer,
+#background_layer #blog_wrapper #sidebar .blog_post_content .footer {
+  font-size: 12px;
+  border-top: 1px solid #dddddd;
+  margin: 20px 0 0 0;
+  padding: 5px 10px 20px 0;
+  color: #2076a4;
+}
+#background_layer #blog_wrapper #blog_content ul#pagination, #background_layer #blog_wrapper #blog_post ul#pagination, #background_layer #blog_wrapper #sidebar ul#pagination {
+  clear: both;
+}
+#background_layer #blog_wrapper #blog_content ul#pagination li, #background_layer #blog_wrapper #blog_post ul#pagination li, #background_layer #blog_wrapper #sidebar ul#pagination li {
+  float: left;
+  list-style: none;
+  padding: 30px 5px 0 0;
+  margin: 0;
+}
+#background_layer #blog_wrapper #blog_content ul#pagination li a,
+#background_layer #blog_wrapper #blog_post ul#pagination li a,
+#background_layer #blog_wrapper #sidebar ul#pagination li a,
+#background_layer #blog_wrapper #blog_content ul#pagination li em,
+#background_layer #blog_wrapper #blog_post ul#pagination li em,
+#background_layer #blog_wrapper #sidebar ul#pagination li em {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  behavior: url(http://www.snappyseed.com/subpixel/scripts/PIE.htc);
+  padding: 5px 10px 5px 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #dddddd;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+#background_layer #blog_wrapper #blog_content ul#pagination li a:hover, #background_layer #blog_wrapper #blog_post ul#pagination li a:hover, #background_layer #blog_wrapper #sidebar ul#pagination li a:hover {
+  background-color: #ffffff;
+}
+#background_layer #blog_wrapper #blog_content ul#pagination li em, #background_layer #blog_wrapper #blog_post ul#pagination li em, #background_layer #blog_wrapper #sidebar ul#pagination li em {
+  background-color: #ffffff;
+  font-style: normal;
+  color: #666666;
+}
+#background_layer #blog_wrapper #blog_post ul#pagination {
+  width: 730px;
+  border-top: 1px solid #dddddd;
+  margin: 10px 0 0 0;
+}
+#background_layer #blog_wrapper #blog_post ul#pagination li {
+  padding: 10px 0 0 0;
+}
+#background_layer #blog_wrapper #blog_post ul#pagination li.next {
+  float: right;
+  padding-right: 0;
+}
+#background_layer #blog_wrapper #blog_post .blog_post_content {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 30px;
+}
+#background_layer #blog_wrapper #blog_post .blog_post_content h3, #background_layer #blog_wrapper #blog_post .blog_post_content h4 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  color: #333333;
+  padding: 20px 0 0 0;
+}
+#background_layer #blog_wrapper #blog_post .blog_post_content h3 {
+  font-size: 22px;
+  color: #555555;
+}
+#background_layer #blog_wrapper #blog_post .blog_post_content h4 {
+  font-size: 18px;
+  color: #555555;
+}
+#background_layer #blog_wrapper #blog_post .blog_post_content ul {
+  color: #444444;
+  padding: 20px 0 0 20px;
+}
+#background_layer #blog_wrapper #blog_post .blog_post_content ul li {
+  list-style: disc inside;
+  padding: 3px 0 3px 0;
+}
+#background_layer #blog_wrapper #blog_post .blog_post_content blockquote p {
+  background-color: #e5e5e5;
+  padding: 20px;
+  margin: 20px 20px 0 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  behavior: url(http://www.snappyseed.com/subpixel/scripts/PIE.htc);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  color: #666666;
+  font-size: 14px;
+  background-image: url(http://www.snappyseed.com/subpixel/css/../images/bg-blog_quote.png);
+  background-repeat: no-repeat;
+  background-position: -7px -7px;
+}
+#background_layer #blog_wrapper #blog_post .blog_post_content pre {
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin: 20px 0 0 0;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  behavior: url(http://www.snappyseed.com/subpixel/scripts/PIE.htc);
+  overflow: auto;
+  font-size: 12px;
+}
+#background_layer #blog_wrapper #blog_post #comments h3, #background_layer #blog_wrapper #blog_post #comments h4 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  color: #333333;
+  padding: 20px 0 0 0;
+}
+#background_layer #blog_wrapper #blog_post #comments h4 {
+  padding: 25px 0 5px 0;
+  font-size: 18px;
+  color: #555555;
+  width: 720px;
+}
+#background_layer #blog_wrapper #blog_post #comments form {
+  padding: 10px 0 0 0;
+  border-top: none;
+}
+#background_layer #blog_wrapper #blog_post #comments fieldset {
+  margin: 0;
+}
+#background_layer #blog_wrapper #blog_post #comments .comment_item {
+  overflow: hidden;
+  height: 100%;
+  padding: 20px 0 0 0;
+}
+#background_layer #blog_wrapper #blog_post #comments .comment_item .content {
+  float: left;
+  width: 609px;
+  background-image: url(http://www.snappyseed.com/subpixel/css/../images/bg-comment_left.gif);
+  background-repeat: no-repeat;
+  font-size: 12px;
+  color: #555555;
+  padding: 0 0 0 20px;
+}
+#background_layer #blog_wrapper #blog_post #comments .comment_item .content p {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #dddddd;
+  border-left: none;
+}
+#background_layer #blog_wrapper #blog_post #comments .comment_item .info {
+  float: left;
+  width: 100px;
+  margin: 0;
+}
+#background_layer #blog_wrapper #blog_post #comments .comment_item .info p {
+  font-size: 12px;
+  text-align: right;
+  color: #555555;
+  font-weight: bold;
+  padding: 16px 0 2px 0;
+}
+#background_layer #blog_wrapper #blog_post #comments .comment_item .info p a {
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+#background_layer #blog_wrapper #blog_post #comments .comment_item .info p a:hover {
+  text-decoration: underline;
+}
+#background_layer #blog_wrapper #blog_post #comments .comment_item .info p em {
+  font-size: 11px;
+  color: #777777;
+  font-weight: normal;
+  font-style: normal;
+}
+#background_layer #blog_wrapper #sidebar {
+  width: 200px;
+}
+#background_layer #blog_wrapper #sidebar #datepicker {
+  padding: 30px 0 0 2px;
+}
+#background_layer #blog_wrapper #sidebar .generic_list {
+  padding: 30px 0 0 0;
+}
+#background_layer #blog_wrapper #sidebar .generic_list h4 {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0;
+  border-bottom: 3px solid #dddddd;
+  color: #444444;
+}
+#background_layer #blog_wrapper #sidebar .generic_list ul {
+  font-size: 12px;
+  padding: 0;
+}
+#background_layer #blog_wrapper #sidebar .generic_list ul li {
+  border-bottom: 1px dotted #aaaaaa;
+  list-style: none;
+}
+#background_layer #blog_wrapper #sidebar .generic_list ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 0 5px 5px;
+}
+#background_layer #blog_wrapper #sidebar .generic_list ul li a:hover {
+  background-color: #e5e5e5;
+}
+#background_layer #blog_wrapper #sidebar .generic_list ul li a em {
+  display: block;
+  font-size: 10px;
+  color: #888888;
+  font-style: normal;
+}

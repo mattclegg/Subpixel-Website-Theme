@@ -7,7 +7,6 @@
 	<% base_tag %>
 	<title>$Title &raquo; $SiteConfig.Title</title>
 	$MetaTags(false)
-	<link rel="stylesheet/less" href="css/style.less" />
 	<link rel="stylesheet" href="css/overcast/jquery-ui-1.8.16.custom.css" />
 	
 	<link href="css/prettify.css" type="text/css" rel="stylesheet" />
@@ -166,7 +165,7 @@
 		
 			<div id="twitter">
 			
-				<img src="images/twitter_logo.png" width="120" height="28" alt="Twitter logo" />
+				<img src="{$ThemeDir}images/twitter_logo.png" width="120" height="28" alt="Twitter logo" />
 			
 				<ul>
 				
